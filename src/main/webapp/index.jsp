@@ -2,16 +2,17 @@
 <%request.setCharacterEncoding("utf-8"); %>
 <%response.setContentType("text/html; charset=utf-8"); %>
 
+<!DOCTYPE html PUBLIC>
 
 <html>
 <head>
-	<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
 </head>
 <body>
-<h1>
-	Hello world!
-</h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<a href="home.do">이동</a>
+
 </body>
 </html>
+
