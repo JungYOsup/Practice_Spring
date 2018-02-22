@@ -7,6 +7,7 @@
     "outline": {
       
     },
+<<<<<<< HEAD
     "browser-extension": {
       
     },
@@ -17,6 +18,18 @@
       
     },
     "jquery-mobile1.5": {
+=======
+    "chrome-apps": {
+      
+    },
+    "chrome-extension": {
+      
+    },
+    "browser-extension": {
+      
+    },
+    "jquery-extension": {
+>>>>>>> 57f35aef3106ea06f60a4e9f57dd2d0070bc8f0b
       
     }
   },

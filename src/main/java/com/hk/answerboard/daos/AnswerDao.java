@@ -1,5 +1,10 @@
 package com.hk.answerboard.daos;
 
+<<<<<<< HEAD
+=======
+import java.util.ArrayList;
+import java.util.HashMap;
+>>>>>>> 57f35aef3106ea06f60a4e9f57dd2d0070bc8f0b
 import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -13,13 +18,16 @@ public class AnswerDao implements IAnswerDao {
 	
 	@Autowired
 	private SqlSessionTemplate sqlSession;
+	
 	private String namespace="com.hk.ansboard.";
 	
 	@Override
 	public List<AnswerDto> getAllList() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return sqlSession.selectList(namespace+"boardlist");
+		
 	}
+	
 	@Override
 	public boolean insertBoard(AnswerDto dto) {
 		int count=0;

@@ -11,15 +11,16 @@ import com.hk.answerboard.dtos.AnswerDto;
 @Service
 public class AnswerService implements IAnsService{
 
-	@Autowired
+	@Autowired	
 	private IAnswerDao answerDao;
 
 	@Override
 	public List<AnswerDto> getAllList() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return answerDao.getAllList();
 	}
 
+	
 	@Override
 	public boolean insertBoard(AnswerDto dto) {
 		return answerDao.insertBoard(dto);
