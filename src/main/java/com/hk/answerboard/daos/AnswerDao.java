@@ -1,8 +1,6 @@
 package com.hk.answerboard.daos;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,8 +22,9 @@ public class AnswerDao implements IAnswerDao {
 	}
 	@Override
 	public boolean insertBoard(AnswerDto dto) {
-		// TODO Auto-generated method stub
-		return false;
+		int count=0;
+		count=sqlSession.insert(namespace+"insertboard",dto);
+		return count>0?true:false;
 	}
 	@Override
 	public boolean readCount(int seq) {

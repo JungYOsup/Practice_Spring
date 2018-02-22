@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.hk.answerboard.daos.IAnswerDao;
 import com.hk.answerboard.dtos.AnswerDto;
@@ -23,8 +22,7 @@ public class AnswerService implements IAnsService{
 
 	@Override
 	public boolean insertBoard(AnswerDto dto) {
-		// TODO Auto-generated method stub
-		return false;
+		return answerDao.insertBoard(dto);
 	}
 
 	@Override

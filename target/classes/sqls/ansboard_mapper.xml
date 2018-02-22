@@ -3,5 +3,10 @@
 
 <!--namespace는 알아서 하는사람이 바꿔주셈  -->
 <mapper namespace="com.hk.ansboard">
-
+	<insert id="inserboard" parameterType="AnswerDto">
+		INSERT INTO ANSWERBOARD
+		(SEQ,ID,TITLE,CONTENT,REGDATE,REFER,STEP,DEPTH,READCOUNT,DELFLAG)
+		VALUES(ANSWERBOARD_SEQ.NEXTVAL,#{id},#{title},#{content},SYSDATE,
+		(SELECT NVL(MAX(REFER)+1,0) FROM ANSWERBOARD),0,0,0,'N')
+	</insert>
 </mapper>
