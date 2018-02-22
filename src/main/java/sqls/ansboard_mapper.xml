@@ -2,6 +2,6 @@
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!--namespace는 알아서 하는사람이 바꿔주셈  -->
-<mapper namespace="org.mybatis.example.BlogMapper">
+<mapper namespace="com.hk.ansboard">
 
 </mapper>
