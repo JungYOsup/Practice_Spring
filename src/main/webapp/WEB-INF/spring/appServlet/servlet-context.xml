@@ -21,12 +21,9 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-<<<<<<< HEAD
-=======
 	<!--무조건 패키지명과 중복되게끔 , com.hk.answerboard.controller, com.hk.answerboard daos 등 중복되게끔 패키지를 잡아야한다
 	만약 다른 패키지로 되어있으면 Scan을 하지 못한다. 
 	예를들어 com.hk.answerboard라고 등록되어있는데 min.edu.yosup이라고 패키지가 되어있으면 Scan을 하지 못함 -->
->>>>>>> 57f35aef3106ea06f60a4e9f57dd2d0070bc8f0b
 	<context:component-scan base-package="com.hk.answerboard" />
 	
 	

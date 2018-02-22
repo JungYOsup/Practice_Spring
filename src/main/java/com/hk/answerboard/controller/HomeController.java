@@ -26,10 +26,7 @@ public class HomeController {
 	
 	@Autowired
 	private IAnsService answerService;
-<<<<<<< HEAD:src/main/java/com/hk/answerboard/controller/HomeController.java
-=======
 	
->>>>>>> 57f35aef3106ea06f60a4e9f57dd2d0070bc8f0b:src/main/java/com/hk/answerboard/controller/HomeController.java
 	/**
 	 * Simply selects the home view to render by returning its name.
 	 */
@@ -47,7 +44,6 @@ public class HomeController {
 		
 		return "home";
 	}
-<<<<<<< HEAD:src/main/java/com/hk/answerboard/controller/HomeController.java
 	@RequestMapping(value="/insertboard.do")
 	public String insertboard(AnswerDto dto) {
 		boolean isS=answerService.insertBoard(dto);
@@ -61,7 +57,6 @@ public class HomeController {
 	public String insertform(Locale locale) {
 		return "insertboard";
 	}
-=======
 	
 	@RequestMapping(value = "/boardlist.do", method = RequestMethod.GET)
 	public String boardlist(Model model,Locale locale) {
@@ -76,5 +71,4 @@ public class HomeController {
 		return "boardlist";
 	}
 	
->>>>>>> 57f35aef3106ea06f60a4e9f57dd2d0070bc8f0b:src/main/java/com/hk/answerboard/controller/HomeController.java
 }

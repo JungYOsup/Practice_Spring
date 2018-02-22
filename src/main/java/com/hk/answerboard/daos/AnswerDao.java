@@ -1,10 +1,8 @@
 package com.hk.answerboard.daos;
 
-<<<<<<< HEAD
-=======
+
 import java.util.ArrayList;
 import java.util.HashMap;
->>>>>>> 57f35aef3106ea06f60a4e9f57dd2d0070bc8f0b
 import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;

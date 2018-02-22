@@ -2,15 +2,14 @@
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!--namespace는 알아서 하는사람이 바꿔주셈 -->
+
 <mapper namespace="com.hk.ansboard">
-<<<<<<< HEAD
 	<insert id="inserboard" parameterType="AnswerDto">
 		INSERT INTO ANSWERBOARD
 		(SEQ,ID,TITLE,CONTENT,REGDATE,REFER,STEP,DEPTH,READCOUNT,DELFLAG)
 		VALUES(ANSWERBOARD_SEQ.NEXTVAL,#{id},#{title},#{content},SYSDATE,
 		(SELECT NVL(MAX(REFER)+1,0) FROM ANSWERBOARD),0,0,0,'N')
 	</insert>
-=======
 
 	<select id="boardlist" resultType="AnswerDto">
 
@@ -20,7 +19,4 @@
 
 	</select>
 
-
-
->>>>>>> 57f35aef3106ea06f60a4e9f57dd2d0070bc8f0b
 </mapper>

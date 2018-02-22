@@ -11,11 +11,7 @@
 </head>
 <body>
 
-<<<<<<< HEAD
-<a href="insertform.do">이동</a>
-=======
 <a href="boardlist.do">이동</a>
->>>>>>> 57f35aef3106ea06f60a4e9f57dd2d0070bc8f0b
 
 </body>
 </html>
