@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!--namespace는 알아서 하는사람이 바꿔주셈  -->
+<!--namespace는 알아서 하는사람이 바꿔주셈 -->
 <mapper namespace="com.hk.ansboard">
+
+	<select id="boardlist" resultType="AnswerDto">
+
+		SELECT
+		SEQ,ID,TITLE,CONTENT,REGDATE,REFER,STEP,DEPTH,READCOUNT,DELFLAG FROM
+		ANSWERBOARD ORDER BY REFER DESC,STEP ASC
+
+	</select>
+
+
 
 </mapper>

@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<a href="home.do">이동</a>
+<a href="boardlist.do">이동</a>
 
 </body>
 </html>

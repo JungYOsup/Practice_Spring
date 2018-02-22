@@ -1,5 +1,6 @@
 package com.hk.answerboard.daos;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,13 +16,16 @@ public class AnswerDao implements IAnswerDao {
 	
 	@Autowired
 	private SqlSessionTemplate sqlSession;
+	
 	private String namespace="com.hk.ansboard.";
 	
 	@Override
 	public List<AnswerDto> getAllList() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return sqlSession.selectList(namespace+"boardlist");
+		
 	}
+	
 	@Override
 	public boolean insertBoard(AnswerDto dto) {
 		// TODO Auto-generated method stub
